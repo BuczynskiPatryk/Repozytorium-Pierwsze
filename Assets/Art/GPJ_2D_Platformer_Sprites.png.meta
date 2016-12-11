@@ -1,16 +1,18 @@
 fileFormatVersion: 2
 guid: 0938de6010a00664c80a14ce2346196d
-timeCreated: 1479671457
+timeCreated: 1481492289
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Player
     21300002: Ground
     21300004: Spikes
+    21300006: Player_Walking_1
+    21300008: Player_Walking_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -51,12 +53,7 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: Standalone
-    maxTextureSize: 128
-    textureFormat: -3
-    compressionQuality: 50
-    allowsAlphaSplitting: 0
+  buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -90,10 +87,36 @@ TextureImporter:
       name: Spikes
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
+        x: 64
+        y: 81
         width: 15
         height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_Walking_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_Walking_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

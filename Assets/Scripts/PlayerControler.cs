@@ -12,10 +12,11 @@ public class PlayerControler : MonoBehaviour {
     private bool grounded;
 
     private bool doubleJumped;
+    private Animator anim;
 
 	// Use this for initialization
 	void Start () {
-	
+        anim = GetComponent<Animator>();
 	}
 	
     void FixedUpdate()
@@ -51,6 +52,7 @@ public class PlayerControler : MonoBehaviour {
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
+        anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
     }
 
     public void Jump()
